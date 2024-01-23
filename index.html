@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!-- <link rel="stylesheet" href="script.js"> -->
     <title>Color Canvas</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Pick a color and paint the carpet</h1>
@@ -51,7 +53,9 @@
                         <section>
                             Choose color!
                             <br>
-                            <input type="text">
+                            <input type="color" onclick="clrpickr()"  id="inpt">
+
+                            <!-- <button id="clrbtn" onclick="setBg()">Rainbow color 🌈</button> -->
                         </section>
                     </div>
                 </div>
@@ -60,5 +64,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+
 </body>
+
 </html>
