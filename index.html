@@ -1,70 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="script.js"> -->
     <title>Color Canvas</title>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Pick a color and paint the carpet</h1>
-        <div class="canvas-container">
-            <div class="the-canvas">
-                <div class="color-options">
-                    <div class="color" id="red"></div>
-                    <div class="color" id="blue"></div>
-                    <div class="color" id="yellow"></div>
-                    <div class="color" id="purple"></div>
-                    <div class="color" id="brown"></div>
-                </div>
+    <canvas id="canvas"></canvas>
+    <!-- <h1>Color the Canvas</h1> -->
 
+    <button class="colorChange" style="background-color:blue"></button>
+    <button class="colorChange" style="background-color:red"></button>
+    <button class="colorChange" style="background-color:orange"></button>
+    <button class="colorChange" style="background-color:yellow"></button>
+    <button class="colorChange" style="background-color:grey"></button>
+    <input type="color" name="" id="clr">
+    <button id="clear">Clear</button>
+ 
 
-                <div class="painting">
-                    <div id="row_1">
-                        <div class="row" id="row_1_box_1"></div>
-                        <div class="row" id="row_1_box_2"></div>
-                        <div class="row" id="row_1_box_3"></div>
-                        <div class="row" id="row_1_box_4"></div>
-                    </div>
-                    <div id="row_2">
-                        <div class="row" id="row_2_box_1"></div>
-                        <div class="row" id="row_2_box_2"></div>
-                        <div class="row" id="row_2_box_3"></div>
-                        <div class="row" id="row_2_box_4"></div>
-                    </div>
-                    <div id="row_3">
-                        <div class="row" id="row_3_box_1"></div>
-                        <div class="row" id="row_3_box_2"></div>
-                        <div class="row" id="row_3_box_3"></div>
-                        <div class="row" id="row_3_box_4"></div>
-                    </div>
-                    <div id="row_4">
-                        <div class="row" id="row_4_box_1"></div>
-                        <div class="row" id="row_4_box_2"></div>
-                        <div class="row" id="row_4_box_3"></div>
-                        <div class="row" id="row_4_box_4"></div>
-                    </div>
-                    <div class="color-picker">
-                        <h3> Color Box</h3>
-                        <section>
-                            Choose color!
-                            <br>
-                            <input type="color" onclick="clrpickr()"  id="inpt">
-
-                            <!-- <button id="clrbtn" onclick="setBg()">Rainbow color 🌈</button> -->
-                        </section>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <script src="script.js"></script>
-
 </body>
 
 </html>
