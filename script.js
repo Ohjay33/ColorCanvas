@@ -1,9 +1,9 @@
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 
-canvas.height = window.innerHeight - 10;
+canvas.height = window.innerHeight - 150;
 canvas.width = window.innerWidth - 100;
-// canvas.backgroundColor = window.backgroundColor - white
+// canvas.backgroundColor = window.backgroundColor - grey
 
 let x = null,
     y = null;
@@ -39,7 +39,7 @@ window.addEventListener('mousemove', (e) => {
     // The function to clear the canvas
     document.getElementById('clear').onclick = function() {
         context.clearRect(0, 0, canvas.width, canvas.height);
-        document.body.style.backgroundColor = "white";
+        document.body.style.backgroundColor = "antiquewhite";
     
     };
 
